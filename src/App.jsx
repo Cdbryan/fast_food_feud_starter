@@ -56,7 +56,7 @@ export function App() {
       {/* MAIN COLUMN */}
       <div className="container">
         {/* HEADER GOES HERE */}
-        <Header appInfo={appInfo}/>
+        <Header title={appInfo.title} tagline={appInfo.tagline} description={appInfo.description}/>
 
         {/* RESTAURANTS ROW */}
         <div className="RestaurantsRow">
@@ -72,7 +72,7 @@ export function App() {
         </div>
 
         {/* INSTRUCTIONS GO HERE */}
-        <Instructions instructions={appInfo.instructions} />
+        <Instructions instructions={appInfo.instructions.start} />
 
         {/* MENU DISPLAY */}
         <div className="MenuDisplay display">
