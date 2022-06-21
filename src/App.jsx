@@ -91,8 +91,7 @@ export function App() {
 
           {/* NUTRITION FACTS */}
           <div className="NutritionFacts nutrition-facts">{
-            <NutritionalLabel item={appInfo}/>
-          
+            currFood ? <NutritionalLabel item={currFood}/> : null
           }</div>
         </div>
 
